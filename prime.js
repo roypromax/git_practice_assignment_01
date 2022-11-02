@@ -1,26 +1,21 @@
-function checkPrime(num){
-let factor = 0;
-
-for(let i=0; i<=num; i++)}{
-if(num%i === 0){
-factor++;
+function check_prime(num){
+let factors=0;
+for (let i=1; i<=num; i++ ){
+if (num%i==0){
+factors++;
 }
-
-if(factor==2){
+}
+if (factors==2){
 return true;
-}
-else{
+} else{
 return false;
 }
 }
 
-
-let ans = checkPrime(21);
-
-
-if(ans === true){
+let answer = check_prime(13)
+if (answer==true){
 console.log("Prime");
-}else{
-console.log("Not Prime");
+} else {
+console.log("Not a Prime");
 }
 
